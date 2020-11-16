@@ -3,7 +3,7 @@
 --=========
 
 ---@type Wc3AbilityExt
-local Wc3AbilityExt = require(LibManager.load('https://github.com/nelloy-git/Wc3AbilityExt.git'))
+local Wc3AbilityExt = LibManager.getDepency('Wc3AbilityExt')
 local TargetingFriend = Wc3AbilityExt.TargetingTypeFriend
 
 --========

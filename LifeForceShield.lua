@@ -3,12 +3,12 @@
 --=========
 
 ---@type Wc3AbilityExt
-local Wc3AbilityExt = require(LibManager.load('https://github.com/nelloy-git/Wc3AbilityExt.git'))
+local Wc3AbilityExt = LibManager.getDepency('Wc3AbilityExt')
 local AbilityExtType = Wc3AbilityExt.Type
 
-local Casting = require('Hero.CorruptedPriest.LifeForceShield.Casting')
-local Data = require('Hero.CorruptedPriest.LifeForceShield.Data')
-local Targeting = require('Hero.CorruptedPriest.LifeForceShield.Targeting')
+local Casting = require('LifeForceShield.Casting')
+local Data = require('LifeForceShield.Data')
+local Targeting = require('LifeForceShield.Targeting')
 
 --========
 -- Module

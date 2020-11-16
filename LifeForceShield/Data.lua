@@ -3,21 +3,21 @@
 --=========
 
 ---@type Wc3AbilityExt
-local Wc3AbilityExt = require(LibManager.load('https://github.com/nelloy-git/Wc3AbilityExt.git'))
+local Wc3AbilityExt = LibManager.getDepency('Wc3AbilityExt')
 local DataType = Wc3AbilityExt.DataType
 ---@type Wc3Handle
-local Wc3Handle = require(LibManager.load('https://github.com/nelloy-git/Wc3Handle.git'))
+local Wc3Handle = LibManager.getDepency('Wc3Handle')
 local Unit = Wc3Handle.Unit
 ---@type Wc3Parameter
-local Wc3Parameter = require(LibManager.load('https://github.com/nelloy-git/Wc3Parameter.git'))
+local Wc3Parameter = LibManager.getDepency('Wc3Parameter')
 local ParamUnit = Wc3Parameter.UnitContainer
-local ParamMATK = Wc3Parameter.ParameterType.enum.MATK
+local ParamMATK = Wc3Parameter.Type.enum.MATK
 ---@type Wc3Utils
-local Wc3Utils = require(LibManager.load('https://github.com/nelloy-git/Wc3Utils.git'))
+local Wc3Utils = LibManager.getDepency('Wc3Utils')
 local isType = Wc3Utils.isType
 
 ---@type LifeForceShieldSettings
-local Settings = require('Hero.CorruptedPriest.LifeForceShield.Settings')
+local Settings = require('LifeForceShield.Settings')
 local LifeDrainPerSec = Settings.LifeDrainPerSec
 local BonusShieldPerMAtk = Settings.BonusShieldPerMAtk
 

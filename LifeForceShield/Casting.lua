@@ -3,12 +3,12 @@
 --=========
 
 ---@type Wc3AbilityExt
-local Wc3AbilityExt = require(LibManager.load('https://github.com/nelloy-git/Wc3AbilityExt.git'))
+local Wc3AbilityExt = LibManager.getDepency('Wc3AbilityExt')
 local CastingType = Wc3AbilityExt.CastingType
 local casting_period = Wc3AbilityExt.getAbilityCastingPeriod
 
 ---@type LifeForceShieldSettings
-local Settings = require('Hero.CorruptedPriest.LifeForceShield.Settings')
+local Settings = require('LifeForceShield.Settings')
 local LifeDrainPerSec = Settings.LifeDrainPerSec
 local BonusShieldPerMAtk = Settings.BonusShieldPerMAtk
 
