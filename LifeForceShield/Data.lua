@@ -12,6 +12,7 @@ local Unit = Wc3Handle.Unit
 local Wc3Parameter = LibManager.getDepency('Wc3Parameter')
 local ParamUnit = Wc3Parameter.UnitContainer
 local ParamMATK = Wc3Parameter.Type.enum.MATK
+local ParamRES = Wc3Parameter.ValueType.enum.RES
 ---@type Wc3Utils
 local Wc3Utils = LibManager.getDepency('Wc3Utils')
 local isType = Wc3Utils.isType
@@ -38,7 +39,7 @@ end
 function AbilData:getTooltip(abil)
     local percent = 100 * LifeDrainPerSec
     percent = percent - percent % 1
-    local matk = ParamUnit.get(abil:getOwner()):getResult(ParamMATK)
+    local matk = ParamUnit.get(abil:getOwner()):get(ParamRES, ParamMATK)
     local bonus = 100 * BonusShieldPerMAtk * matk
     bonus = bonus - bonus % 1 + 1
 
